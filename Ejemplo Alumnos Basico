@@ -1,0 +1,10 @@
+import os
+os.system("cls")
+
+print("Sistema de Registro de Alumnos")
+edad = int(input("Ingresa la edad del alumno: "))
+if edad < 0:
+    raise ValueError("La edad no puede ser negativa.")
+
+nombre = input("Ingresa el nombre del alumno: ")
+print(f"Alumno registrado: Nombre: {nombre}, Edad: {edad}")
